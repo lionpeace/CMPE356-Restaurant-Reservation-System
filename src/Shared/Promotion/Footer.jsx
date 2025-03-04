@@ -1,10 +1,9 @@
-
 function Footer() {
     return (
-        <footer>
-            <p> All Rights Reserved. © {new Date().getFullYear()} RRSystem.</p>
+        <footer className="footer-container">
+            <p>All Rights Reserved. © {new Date().getFullYear()} rezTable</p>
         </footer>
     );
 }
 
-export default Footer
+export default Footer;

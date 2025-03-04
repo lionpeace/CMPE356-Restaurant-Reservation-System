@@ -1,0 +1,113 @@
+.login-form-body {
+  font-family: 'Courier New', Courier, monospace;
+  background: linear-gradient(to right, #1b2d43, #1866bb); /* Arka plan rengi */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  margin: 0; 
+}
+
+.login-title {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px; /* Başlık ile form arasına boşluk ekledik */
+}
+
+.login-form-container {
+  background: linear-gradient(to right, #1b2d43, #1866bb); 
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 600px; 
+  width: 100%;
+  margin: 150px auto; 
+  box-sizing: border-box; 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 
+            0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-title {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px; /* Başlık ile form arasına boşluk ekledik */
+}
+
+.login-form-container form {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; 
+}
+
+.login-form-container label {
+  margin-bottom: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.login-form-container input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  width: 100%; 
+  background-color: white; 
+  color: black; 
+}
+
+.login-form-container button {
+  padding: 10px;
+  background-color:#2c2c2cea;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 0 0 1.2px black;
+}
+
+.login-form-container button:hover {
+  border-color: #2c2c2cea;
+  color: black;
+  background-color: #2c2c2cea;
+}
+
+.login-form-container ::placeholder {
+  color: black;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%; 
+}
+
+.input-group label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  background-color: white; 
+  color: black; 
+}
+
+.toggle-password {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: white;
+}

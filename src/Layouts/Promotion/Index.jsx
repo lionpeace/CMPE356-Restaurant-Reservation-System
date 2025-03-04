@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
 const Index = () => {
 
     const navigate = useNavigate();
@@ -11,6 +12,27 @@ const Index = () => {
         if (window.location.pathname === '/index') {
             navigate('/', { replace: true });
         }
+
+        const styles = [
+            "/Libs/css/Promotion/Home/Home.css",
+            "/Libs/css/Promotion/Footer.css",
+            "/Libs/css/Promotion/Header.css",
+            "/Libs/css/Promotion/signup.css",
+            "/Libs/css/Promotion/login.css"
+        ];
+
+        const styleElements = styles.map(href => {
+            const link = document.createElement("link");
+            link.rel = "stylesheet";
+            link.href = href;
+            document.head.appendChild(link);
+            return link;
+        });
+
+        return () => {
+            styleElements.forEach(link => document.head.removeChild(link));
+        };
+
     }, [navigate]);
 
     return (

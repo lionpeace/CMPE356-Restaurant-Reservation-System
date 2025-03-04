@@ -1,0 +1,765 @@
+.features-section {
+  padding: 120px 20px 80px; /* Üst boşluğu artırdık */
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+.section-title span {
+  font-size: 3rem; /* 'Rezal' kelimesini büyüttük */
+  color: #ff5733; /* Rastgele bir renk verdik (sonradan değiştirilebilir) */
+  font-weight: bold;
+}
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.feature-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+}
+
+.feature-item img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  color: #555;
+}
+/* Yeni Entegrasyon Bölümü */
+.integration-section-features {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.integration-table {
+  max-width: 800px;
+  margin: auto;
+  background-color: #0047AB;
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+}
+
+.integration-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 1.1rem;
+}
+
+.integration-row:last-child {
+  border-bottom: none;
+}
+
+.integration-row i {
+  color: yellow; /* Onay ikonlarını sarı yaptık */
+  font-size: 1.3rem;
+}
+
+.integration-row .fa-info-circle {
+  color: white;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+  .integration-row {
+      flex-direction: column;
+      text-align: left;
+      padding: 10px;
+  }
+
+  .integration-row i {
+      margin-top: 5px;
+  }
+}
+/* Yeni Özelleştirme Bölümü */
+.customization-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.customization-table {
+  max-width: 800px;
+  margin: auto;
+  background-color: #0047AB;
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+}
+
+.customization-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 1.1rem;
+}
+
+.customization-row:last-child {
+  border-bottom: none;
+}
+
+.customization-row i {
+  color: yellow; /* Onay ikonlarını sarı yaptık */
+  font-size: 1.3rem;
+}
+
+.customization-row .coming-soon {
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+  .customization-row {
+      flex-direction: column;
+      text-align: left;
+      padding: 10px;
+  }
+
+  .customization-row i,
+  .customization-row .coming-soon {
+      margin-top: 5px;
+  }
+}
+/* Yeni Widget Özellikleri Bölümü */
+.features-widget-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.features-widget-table {
+  max-width: 800px;
+  margin: auto;
+  background-color: #0047AB;
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+}
+
+.features-widget-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 1.1rem;
+}
+
+.features-widget-row:last-child {
+  border-bottom: none;
+}
+
+.features-widget-row i {
+  color: yellow; /* Onay ikonlarını sarı yaptık */
+  font-size: 1.3rem;
+}
+
+/* Bilgi İkonu */
+.features-widget-row .fa-info-circle {
+  color: white;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+  .features-widget-row {
+      flex-direction: column;
+      text-align: left;
+      padding: 10px;
+  }
+
+  .features-widget-row i {
+      margin-top: 5px;
+  }
+}
+/* Yeni Yönetim Özellikleri Bölümü */
+.management-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.management-table {
+  max-width: 800px;
+  margin: auto;
+  background-color: #0047AB;
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+}
+
+.management-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 1.1rem;
+}
+
+.management-row:last-child {
+  border-bottom: none;
+}
+
+.management-row i {
+  color: yellow; /* Onay ikonlarını sarı yaptık */
+  font-size: 1.3rem;
+}
+
+/* "Coming Soon" Metni */
+.management-row .coming-soon {
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Bilgi İkonu */
+.management-row .fa-info-circle {
+  color: white;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+  .management-row {
+      flex-direction: column;
+      text-align: left;
+      padding: 10px;
+  }
+
+  .management-row i,
+  .management-row .coming-soon {
+      margin-top: 5px;
+  }
+}
+/* Yeni Masa ve Zaman Yönetimi Bölümü */
+.table-time-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.table-time-table {
+  max-width: 800px;
+  margin: auto;
+  background-color: #0047AB;
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+}
+
+.table-time-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 1.1rem;
+}
+
+.table-time-row:last-child {
+  border-bottom: none;
+}
+
+.table-time-row i {
+  color: yellow; /* Onay ikonlarını sarı yaptık */
+  font-size: 1.3rem;
+}
+
+/* "Coming Soon" Metni */
+.table-time-row .coming-soon {
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+  .table-time-row {
+      flex-direction: column;
+      text-align: left;
+      padding: 10px;
+  }
+
+  .table-time-row i,
+  .table-time-row .coming-soon {
+      margin-top: 5px;
+  }
+}
+/* Yeni SMS ve E-posta Bildirimleri Bölümü */
+.sms-email-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.sms-email-table {
+  max-width: 800px;
+  margin: auto;
+  background-color: #0047AB;
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+}
+
+.sms-email-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 1.1rem;
+}
+
+.sms-email-row:last-child {
+  border-bottom: none;
+}
+
+.sms-email-row i {
+  color: yellow; /* Onay ikonlarını sarı yaptık */
+  font-size: 1.3rem;
+}
+
+/* "Coming Soon" Metni */
+.sms-email-row .coming-soon {
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+  .sms-email-row {
+      flex-direction: column;
+      text-align: left;
+      padding: 10px;
+  }
+
+  .sms-email-row i,
+  .sms-email-row .coming-soon {
+      margin-top: 5px;
+  }
+}
+/* Yeni Hesap Yönetimi Bölümü */
+.account-management-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.account-management-table {
+  max-width: 800px;
+  margin: auto;
+  background-color: #0047AB;
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+}
+
+.account-management-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 1.1rem;
+}
+
+.account-management-row:last-child {
+  border-bottom: none;
+}
+
+.account-management-row i {
+  color: yellow; /* Onay ikonlarını sarı yaptık */
+  font-size: 1.3rem;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+  .account-management-row {
+      flex-direction: column;
+      text-align: left;
+      padding: 10px;
+  }
+
+  .account-management-row i {
+      margin-top: 5px;
+  }
+}
+/* Yeni Rapor ve Analiz Bölümü */
+.report-analytics-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.report-analytics-table {
+  max-width: 800px;
+  margin: auto;
+  background-color: #0047AB;
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+}
+
+.report-analytics-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 1.1rem;
+}
+
+.report-analytics-row:last-child {
+  border-bottom: none;
+}
+
+.report-analytics-row i {
+  color: yellow; /* Onay ikonlarını sarı yaptık */
+  font-size: 1.3rem;
+}
+
+/* "Coming Soon" Metni */
+.report-analytics-row .coming-soon {
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+  .report-analytics-row {
+      flex-direction: column;
+      text-align: left;
+      padding: 10px;
+  }
+
+  .report-analytics-row i,
+  .report-analytics-row .coming-soon {
+      margin-top: 5px;
+  }
+}
+/* Yeni Satış ve Pazarlama Bölümü */
+.sales-marketing-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.sales-marketing-table {
+  max-width: 800px;
+  margin: auto;
+  background-color: #0047AB;
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+}
+
+.sales-marketing-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 1.1rem;
+}
+
+.sales-marketing-row:last-child {
+  border-bottom: none;
+}
+
+.sales-marketing-row i {
+  color: yellow; /* Onay ikonlarını sarı yaptık */
+  font-size: 1.3rem;
+}
+
+/* "Coming Soon" Metni */
+.sales-marketing-row .coming-soon {
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Bilgi İkonu */
+.sales-marketing-row .fa-info-circle {
+  color: white;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+  .sales-marketing-row {
+      flex-direction: column;
+      text-align: left;
+      padding: 10px;
+  }
+
+  .sales-marketing-row i,
+  .sales-marketing-row .coming-soon {
+      margin-top: 5px;
+  }
+}
+/* Yeni Web Sitesi ve Menü Oluşturucu Bölümü */
+.website-menu-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.website-menu-table {
+  max-width: 800px;
+  margin: auto;
+  background-color: #0047AB;
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+}
+
+.website-menu-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 1.1rem;
+}
+
+.website-menu-row:last-child {
+  border-bottom: none;
+}
+
+.website-menu-row i {
+  color: yellow; /* Onay ikonlarını sarı yaptık */
+  font-size: 1.3rem;
+}
+
+/* "Coming Soon" Metni */
+.website-menu-row .coming-soon {
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+  .website-menu-row {
+      flex-direction: column;
+      text-align: left;
+      padding: 10px;
+  }
+
+  .website-menu-row i,
+  .website-menu-row .coming-soon {
+      margin-top: 5px;
+  }
+}
+/* Yeni Entegrasyon Bölümü */
+.integrations-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.integrations-table {
+  max-width: 800px;
+  margin: auto;
+  background-color: #0047AB;
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+}
+
+.integrations-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 1.1rem;
+}
+
+.integrations-row:last-child {
+  border-bottom: none;
+}
+
+.integrations-row i {
+  color: yellow; /* Onay ikonlarını sarı yaptık */
+  font-size: 1.3rem;
+}
+
+/* "Coming Soon" Metni */
+.integrations-row .coming-soon {
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* "On Request" Metni */
+.integrations-row .on-request {
+  color: #FF4500;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+  .integrations-row {
+      flex-direction: column;
+      text-align: left;
+      padding: 10px;
+  }
+
+  .integrations-row i,
+  .integrations-row .coming-soon,
+  .integrations-row .on-request {
+      margin-top: 5px;
+  }
+}
+/* Yeni Müşteri Destek Bölümü */
+.customer-support-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.customer-support-table {
+  max-width: 800px;
+  margin: auto;
+  background-color: #0047AB;
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+}
+
+.customer-support-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 1.1rem;
+}
+
+.customer-support-row:last-child {
+  border-bottom: none;
+}
+
+.customer-support-row i {
+  color: yellow; /* Onay ikonlarını sarı yaptık */
+  font-size: 1.3rem;
+}
+
+/* Bilgi İkonu */
+.customer-support-row .fa-info-circle {
+  color: white;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+  .customer-support-row {
+      flex-direction: column;
+      text-align: left;
+      padding: 10px;
+  }
+
+  .customer-support-row i {
+      margin-top: 5px;
+  }
+}
+/* Yeni Veri Güvenliği Bölümü */
+.security-features-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.security-features-table {
+  max-width: 800px;
+  margin: auto;
+  background-color: #0047AB;
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+}
+
+.security-features-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 1.1rem;
+}
+
+.security-features-row:last-child {
+  border-bottom: none;
+}
+
+.security-features-row i {
+  color: yellow; /* Onay ikonlarını sarı yaptık */
+  font-size: 1.3rem;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+  .security-features-row {
+      flex-direction: column;
+      text-align: left;
+      padding: 10px;
+  }
+
+  .security-features-row i {
+      margin-top: 5px;
+  }
+}

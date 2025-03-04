@@ -1,0 +1,208 @@
+/* General Reset and Basic Settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Main Contact Section: Styling the main contact section */
+.contact {
+  position: relative;
+  min-height: 100vh;
+  background: white;
+  background-size: cover;
+  background-attachment: fixed; /* Parallax effect */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 0;
+  margin-top: 50px;
+}
+
+/* Optional: Darken the background to make text more readable
+.contact::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+*/
+
+/* Top Header and Short Description: Styling the top header and description */
+.contact .content {
+  position: relative; 
+  z-index: 2; 
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  color: #000;
+  margin-bottom: 80px;
+}
+
+.contact .content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.contact .content p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* Two Columns (Left: Info, Right: Form): Styling the container for two columns */
+.containercontact {
+  position: relative;
+  z-index: 2; 
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* Left Column: Contact Information */
+.contactInfo {
+  flex: 1;
+  color: #000; /* Text color set to black */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Each Info Row (Address, Phone, Email): Styling each info row */
+.contanctbox {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.5); /* More transparent background */
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Icon Box: Styling the icon box */
+.contactIcon {
+  font-size: 20px;
+  color: #333;
+  margin-right: 50px; /* Space between icon and text */
+}
+
+/* Text Contact: Styling the text container */
+.textcontact {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  line-height: 1.4;
+}
+
+/* Info Title (Address, Phone, etc.): Styling the info titles */
+.textcontact h3 {
+  font-size: 1rem;
+  color: #d40b00; /* Dark red color */
+  font-weight: 500;
+}
+
+/* Info Text: Styling the info text */
+.textcontact p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #000; /* Text color set to black */
+}
+
+/* Right Column: Form Area */
+.contactForm {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.5); /* More transparent background */
+  border-radius: 8px;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+  padding: 40px;
+}
+
+.contactForm h2 {
+  font-size: 1.8rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Form Elements: Styling the form elements */
+.inputBoxContact {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.inputBoxContact input,
+.inputBoxContact textarea {
+  width: 100%;
+  background: #f5f5f5;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 10px 15px;
+  border-bottom: 2px solid #333;
+  transition: 0.3s;
+  color: #333;
+  resize: none;
+}
+
+/* Using span instead of placeholder */
+.inputBoxContact span {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  color: #333;
+  pointer-events: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.inputBoxContact input:focus ~ span,
+.inputBoxContact input:valid ~ span,
+.inputBoxContact textarea:focus ~ span,
+.inputBoxContact textarea:valid ~ span {
+  font-size: 0.8rem;
+  transform: translateY(-25px);
+  color: #e91e63;
+}
+
+/* Submit Button: Styling the submit button */
+.inputBoxContact input[type="submit"] {
+  width: 120px;
+  padding: 12px;
+  cursor: pointer;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.inputBoxContact input[type="submit"]:hover {
+  background: #0096a8;
+}
+
+/* Responsive Layout: Styling for responsive layout */
+@media (max-width: 991px) {
+  .contact {
+    padding: 30px;
+  }
+  .containercontact {
+    flex-direction: column;
+  }
+  .contactInfo,
+  .contactForm {
+    width: 100%;
+  }
+  .contactInfo {
+    margin-bottom: 20px;
+  }
+}
