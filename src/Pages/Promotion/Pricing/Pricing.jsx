@@ -20,7 +20,6 @@ const Pricing = () => {
             <Header></Header>
             <div className="containerpricing">
                 <h2>Choose the best plan for your reservation plan</h2>
-                <p className="sub-descriptionpricing">The Growth and Success membership levels offer complete access to all system functions, allowing for maximum productivity with no functional constraints.</p>
                 <div className="price-rowpricing">
                    <div className="price-colpricing">
                       <p>Starter</p>

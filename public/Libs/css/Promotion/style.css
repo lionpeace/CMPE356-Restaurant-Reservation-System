@@ -1,10 +1,248 @@
-/* HEADER */
-.header-custom {
-  background-color: rgb(255, 183, 0) !important;
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
+
+/* Body settings */
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+/* Fixed header at the top */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: #292c2f  ; /* Changed the background color to #292c2f */
+  z-index: 1000;
+}
+
+/* Main content starts below the header */
+main {
+  padding-top: 80px;
+}
+
+/* Logo styling */
+.logo h1 {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+/* Desktop navigation */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Desktop nav-links */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #bd1b1b;
+}
+
+/* Hamburger icon (hidden on desktop) */
+.hamburger {
+  display: none;
+  width: 30px;
+  height: 25px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hamburger .bar {
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.hamburger .bar:nth-child(1) {
+  top: 0;
+}
+.hamburger .bar:nth-child(2) {
+  top: 11px;
+}
+.hamburger .bar:nth-child(3) {
+  top: 22px;
+}
+
+/* Hamburger animation: transforms into an X when opened */
+.hamburger.open .bar:nth-child(1) {
+  top: 11px;
+  transform: rotate(45deg);
+}
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open .bar:nth-child(3) {
+  top: 11px;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  /* Hamburger icon appears on mobile */
+  .hamburger {
+    display: block;
+  }
+  
+  /* Mobile nav is positioned small and aligned to the right */
+  .nav {
+    position: absolute;
+    top: 70px;         /* Below the header */
+    right: 10%;        /* Aligned to the right */
+    width: 170px;      /* Increased width slightly */
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    border-radius: 4px;
+    flex-direction: column;
+    padding: 10px 0;
+    display: none;
+    z-index: 998;
+  }
+  
+  /* Show the menu when opened */
+  .nav.open {
+    display: flex;
+  }
+  
+  /* Nav-links are stacked vertically and aligned to the left for readability */
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .nav-links li {
+    margin: 0;
+  }
+  
+  /* Menu options are underlined and padding is increased to make them readable */
+  .nav-links li a {
+    padding: 10px 20px;  /* Increased left-right padding */
+    font-size: 16px;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: left;
+  }
+  
+  /* Remove bottom border for the last link */
+  .nav-links li:last-child a {
+    border-bottom: none;
+  }
+}
+
+
+
+
 /* FOOTER */
-#custom-footer {
-  background-color: yellow;
+.Footer {
+  padding: 2rem 0;
+  margin-top: 15rem;
+  background-color: #292c2f ;
+}
+
+.ft-1 h3 {
+  font-weight: 700;
+  font-family: cursive;
+  letter-spacing: 2px;
+  padding: 0.5rem 0;
+  color: white ;
+}
+
+.ft-1 span {
+  color: #bd1b1b ;
+}
+
+.ft-1 p {
+  padding: 0rem 5rem 0.8rem 0;
+  font-weight: 500;
+  color: white;
+}
+
+.footer-icons i {
+  padding: 0.4rem 0.5rem;
+  background: #e1e1e1;
+  color: #bd1b1b;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+}
+
+.footer-icons i:hover {
+  background: #bd1b1b;
+  color: #fff;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.ft-2 ul {
+  list-style: none;;
+  padding-right: 30px;
+}
+
+.ft-2 ul li {
+  padding: 0.35rem 0;
+  font-weight: 500;
+}
+
+.ft-2 ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.06rem;
+}
+
+
+.footer-a:hover{
+  color: #bd1b1b;
+  transition: all 0.3 ease;
+}
+
+.ft-3 p {
+  font-weight: 500;
+  padding: 0.1rem 0;
+  font-size: 1.06rem;
+  color: white;
+}
+
+.ft-3 i {
+  padding-right: 0.5rem;
+}
+
+
+
+.lasttext
+{
+  color: white;
+  padding-top: 15px;
 }
 
 /* SIGN UP */
@@ -956,12 +1194,7 @@
 /*CONTACT*/
 
 /* General Reset and Basic Settings */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+
 
 /* Main Contact Section: Styling the main contact section */
 .contact {
@@ -1002,6 +1235,8 @@
 .contact .content h2 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  color: #951515; /* Dark red color */
+  font-family: monospace;
 }
 
 .contact .content p {
@@ -1060,7 +1295,7 @@
 /* Info Title (Address, Phone, etc.): Styling the info titles */
 .textcontact h3 {
   font-size: 1rem;
-  color: #d40b00; /* Dark red color */
+  color: #951515; /* Dark red color */
   font-weight: 500;
 }
 
@@ -1106,7 +1341,7 @@
   border-bottom: 2px solid #333;
   transition: 0.3s;
   color: #333;
-  resize: none;
+  resize: both;
 }
 
 /* Using span instead of placeholder */
@@ -1124,9 +1359,9 @@
 .inputBoxContact input:valid ~ span,
 .inputBoxContact textarea:focus ~ span,
 .inputBoxContact textarea:valid ~ span {
-  font-size: 0.8rem;
-  transform: translateY(-25px);
-  color: #e91e63;
+  font-size: 0.9rem;
+  transform: translateY(-30px);
+  color: #951515;
 }
 
 /* Submit Button: Styling the submit button */
@@ -1134,7 +1369,7 @@
   width: 120px;
   padding: 12px;
   cursor: pointer;
-  background: #00bcd4;
+  background: #951515;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -1144,7 +1379,7 @@
 }
 
 .inputBoxContact input[type="submit"]:hover {
-  background: #0096a8;
+  background: #6d1010;
 }
 
 /* Responsive Layout: Styling for responsive layout */
@@ -1166,12 +1401,6 @@
 
 /*HOME*/
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
-}
 
 .header-container {
   display: flex;
@@ -1635,35 +1864,6 @@ nav {
 
 
 
-.footer-container {
-  text-align: center;
-  background: linear-gradient(to right, #1b2d43, #1866bb); 
-  padding: 20px 0;
-  font-size: 16px;
-  width: 100%;
-  box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.3);
-  border-top: 2px solid rgba(255, 255, 255, 0.2);
-  animation: slideUp 0.6s ease-in-out;
-}
-
-.footer-container p {
-  margin: 5px 0;
-  font-size: 14px;
-  opacity: 0.85;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-.footer-container a {
-  color: #ffe57f;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease-in-out, transform 0.3s ease;
-}
-
-.footer-container a:hover {
-  color: #ffffff;
-  transform: scale(1.1);
-}
 
 
 .section-top {
@@ -2001,12 +2201,7 @@ nav {
 /* ------------------------------
    GLOBAL / SHARED STYLES
 ------------------------------ */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+
 
 /* Container for Pricing Section */
 .containerpricing {
@@ -2037,14 +2232,7 @@ nav {
   color: white;
 }
 
-.sub-descriptionpricing {
-  font-size: 1.1rem;
-  color: #555;
-  max-width: 800px; /* Fixed from px */
-  line-height: 1.6;
-  margin-bottom: 30px;
-  margin: 0 auto;
-}
+
 
 /* ------------------------------
    PRICING CARDS
@@ -2387,7 +2575,7 @@ nav {
   font-size: 2.5rem;
   font-weight: bold;
   color: #222;
-  background: linear-gradient(90deg, #0f1f96e0, #4e0314);
+  background: linear-gradient(90deg, #bd1b1b, #4e0314);
   padding: 20px 50px;
   border-radius: 50px;
   display: inline-block;
@@ -2432,10 +2620,11 @@ nav {
 }
 
 .price-colpricing p:first-child {
-  font-size: 1.2rem;
+  font-family: auto;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 15px;
-  color: #0f1f96e0; /* Custom color */
+  color: #bd1b1b; /* Custom color */
 }
 
 .price-colpricing h3 {
@@ -2478,13 +2667,13 @@ nav {
   content: "✓";
   position: absolute;
   left: 0;
-  color: #0f1f96e0;
+  color: #bd1b1b;
   font-weight: bold;
   font-size: 1.1rem;
 }
 
 .price-colpricing button {
-  background-color: #0f1f96e0;
+  background-color: #bd1b1b;
   color: #fff;
   border: none;
   border-radius: 25px;
@@ -2496,7 +2685,7 @@ nav {
 }
 
 .price-colpricing button:hover {
-  background-color: #c72c4f; /* Slightly darker accent color */
+  background-color: #951515; /* Slightly darker accent color */
 }
 
 .descriptionpricing {
@@ -2643,7 +2832,7 @@ nav {
 .faq-itempricing {
   padding: 20px;
   border-bottom: 1px solid #e0e0e0;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 1.2s ease, transform 1.2s ease;
   position: relative;
   cursor: pointer;
 }
@@ -2658,8 +2847,8 @@ nav {
 }
 
 .faq-itempricing h2 {
-  font-size: 1.4rem;
-  color: #007BFF;
+  font-size: 1rem;
+  color: #000;
   margin-bottom: 15px;
   position: relative;
 }
@@ -2668,7 +2857,7 @@ nav {
   content: "";
   width: 50px;
   height: 3px;
-  background-color: #007BFF;
+  background-color: #bd1b1b;  
   display: block;
   margin-top: 5px;
   border-radius: 2px;
@@ -2689,8 +2878,8 @@ nav {
   right: 20px;
   top: 20px;
   font-size: 1.5rem;
-  color: #007BFF;
-  transition: transform 0.5s ease;
+  color: #292c2f ;
+  transition: transform 1s ease;
 }
 
 .faq-itempricing.active .toggle-icon {
@@ -2702,7 +2891,9 @@ nav {
   overflow: hidden;
   padding-top: 0;
   padding-bottom: 0;
-  transition: max-height 0.5s ease, padding 0.5s ease;
+  transition: max-height 1.2s ease, padding 1.2s ease;
+  color: #555;
+  font-size: 1rem; 
 }
 
 .faq-itempricing.active.open p {
