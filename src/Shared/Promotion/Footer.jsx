@@ -1,7 +1,9 @@
+import React from 'react';
+
 function Footer() {
     return (
         <footer className="footer-container">
-            <p>All Rights Reserved. © {new Date().getFullYear()} rezTable</p>
+            <p>&copy; 2025 rezTable. All rights reserved.</p>
         </footer>
     );
 }

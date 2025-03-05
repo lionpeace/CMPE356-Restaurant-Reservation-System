@@ -1,8 +1,7 @@
 import React from 'react';
-import '@fortawesome/fontawesome-free/css/all.min.css'; //npm install @fortawesome/fontawesome-free
-import Header from "../../../Shared/Promotion/Header.jsx";
-import Footer from "../../../Shared/Promotion/Footer.jsx";
-import "../../../../public/Libs/css/Promotion/Contact/Contact.css";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import Header from "../../../Shared/Promotion/Header"; 
+import Footer from "../../../Shared/Promotion/Footer";
 
 const Contact = () => {
     return (

@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Header from "../../../Shared/Promotion/Header.jsx";
-import Footer from "../../../Shared/Promotion/Footer.jsx";
-import "../../../../public/Libs/css/Promotion/Pricing/Pricing.css";
+import Header from "../../../Shared/Promotion/Header"; 
+import Footer from "../../../Shared/Promotion/Footer";
 
 const Pricing = () => {
     const [activeIndex, setActiveIndex] = useState(null);
@@ -105,7 +104,7 @@ const Pricing = () => {
                         <p className="authorpricing">Vish M. - Ukraine</p>
                     </div>
 
-                    <div className="testimonialpricing-cardpricing">
+                    <div className="testimonial-cardpricing">
                         <div className="starspricing">
                             <span className="starpricing">&#9733;</span>
                             <span className="starpricing">&#9733;</span>

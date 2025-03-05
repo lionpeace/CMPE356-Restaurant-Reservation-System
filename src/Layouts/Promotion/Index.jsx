@@ -14,11 +14,7 @@ const Index = () => {
         }
 
         const styles = [
-            "/Libs/css/Promotion/Home/Home.css",
-            "/Libs/css/Promotion/Footer.css",
-            "/Libs/css/Promotion/Header.css",
-            "/Libs/css/Promotion/signup.css",
-            "/Libs/css/Promotion/login.css"
+            "/Libs/css/Promotion/style.css"
         ];
 
         const styleElements = styles.map(href => {

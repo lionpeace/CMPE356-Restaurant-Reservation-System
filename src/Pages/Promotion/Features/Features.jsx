@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from "../../../Shared/Promotion/Header.jsx";
-import Footer from "../../../Shared/Promotion/Footer.jsx";
-import "../../../../public/Libs/css/Promotion/Features/features.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Header from "../../../Shared/Promotion/Header"; 
+import Footer from "../../../Shared/Promotion/Footer";
+
 
 /*npm install @fortawesome/fontawesome-free*/
 

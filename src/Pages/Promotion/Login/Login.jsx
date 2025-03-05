@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "/public/Libs/css/Promotion/Login/login.css";
 
 const LoginForm = () => {
     const [showPassword, setShowPassword] = useState(false);

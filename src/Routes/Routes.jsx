@@ -43,22 +43,22 @@ const router = createBrowserRouter([
             {
                 path: "checkout",
                 element: <Checkout />
-            } 
+            },
+            {
+                path: '/signup',
+                element: <SignUp/>
+            },
+            {
+                path: '/Login',
+                element: <Login/>
+            }, 
 
         ]
     },
     {
         path: '/index',
         element: <Index/>
-    },
-    {
-        path: '/signup',
-        element: <SignUp/>
-    },
-    {
-        path: '/Login',
-        element: <Login/>
-    },  
+    } 
 ]);
 
 export default router;

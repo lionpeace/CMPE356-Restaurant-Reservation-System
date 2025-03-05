@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "/public/Libs/css/Promotion/Signup/signup.css";
 
 const countryCodes = [
     {code: "+1", country: "US"},

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import Header from "../../../Shared/Promotion/Header.jsx";
-import Footer from "../../../Shared/Promotion/Footer.jsx";
-import "../../../../public/Libs/css/Promotion/Pricing/Checkout.css";
+import Header from "../../../Shared/Promotion/Header"; 
+import Footer from "../../../Shared/Promotion/Footer";
 
 const Checkout = () => {
     const [error, setError] = useState('');
