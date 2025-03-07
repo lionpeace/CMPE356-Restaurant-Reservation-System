@@ -14,9 +14,10 @@ const Index = () => {
         }
 
         const styles = [
-            "/Libs/css/Promotion/Home/Home.css",
-            "/Libs/css/Promotion/Footer.css",
-            "/Libs/css/Promotion/Header.css"
+            "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css",
+            "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css",
+            "../../../css/bootstrap/bootstrap.min.css",
+            "../../../css/Promotion/style.css",
         ];
 
         const styleElements = styles.map(href => {
@@ -27,8 +28,26 @@ const Index = () => {
             return link;
         });
 
+        const scripts = [
+            "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js",
+            "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js",
+            "../../../js/bootstrap.min.js",
+            "../../../js/jquery.min.js",
+            "../../../js/main.js",
+            "../../../js/popper.js",
+        ];
+
+        const scriptElements = scripts.map(src => {
+            const script = document.createElement("script");
+            script.src = src;
+            script.async = true;
+            document.body.appendChild(script);
+            return script;
+        });
+
         return () => {
             styleElements.forEach(link => document.head.removeChild(link));
+            scriptElements.forEach(script => document.body.removeChild(script));
         };
 
     }, [navigate]);

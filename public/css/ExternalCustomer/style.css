@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --header-height: 3rem;
+  --nav-width: 68px;
+  --first-color: #025596;
+  --first-color-light: #6799c0;
+  --white-color: #fcfdfe;
+  --body-font: "Inter", sans-serif;
+  --normal-font-size: 1rem;
+  --z-fixed: 100;
+  --main-color: #025596;
+  --second-color: #b2ccdf;
+  --third-color: #fcfdfe;
+  --fourth-color: #6799c0;
+  --fifth-color: #2a70a6;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  transition: .5s;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* EXTERNAL CUSTOMER PAGES */
+
+/* Reserve Page */
+
+.reserve-content {
+  background-image: url('/images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reserve-div {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 550px;
+  width: 100%;
+}
+
+.reserve-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.reserve-form label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.reserve-form input,
+.reserve-form select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.reserve-button {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--main-color) !important;
+  color: white;
+  border: none !important;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.reserve-button:hover {
+  background-color: var(--fifth-color) !important;
+}
+
+.logo-div {
+  margin-top: 2rem;
+}
+
+.reserve-logo {
+  height: 30%;
+  width: 30%;
+  transition: transform 0.3s;
+}
+
+.reserve-logo:hover {
+  transform: scale(1.1);
+}
+
+.phone-input {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.country-code {
+  flex: 1;
+}
+
+.phone-number {
+  flex: 2;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.popup-content h2 {
+  margin-bottom: 1rem;
+}
+
+.popup-content p {
+  margin-bottom: 1rem;
+}
+
+.popup-content button {
+  margin: 20px;
+  margin-top: 1rem;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .reserve-div {
+    padding: 1rem;
+    max-width: 90%;
+  }
+
+  .reserve-form input,
+  .reserve-form select {
+    padding: 0.5rem;
+  }
+
+  .reserve-button {
+    padding: 0.5rem;
+  }
+
+  .reserve-logo {
+    height: 20%;
+    width: 20%;
+  }
+}
